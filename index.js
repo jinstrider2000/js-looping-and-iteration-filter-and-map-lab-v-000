@@ -11,7 +11,7 @@ function exactMatch(drivers, objectToMatch) {
   return drivers.filter(drivers, (driver) => {
     for (let property in objectToMatch) {
       if (objectToMatch.hasOwnProperty(property) && driver[property] === objectToMatch[property]) {
-        console.log(driver, "matched.");
+        console.log(driver, "matched.")
         return true;
       }
     }
